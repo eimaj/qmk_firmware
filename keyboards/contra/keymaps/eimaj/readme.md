@@ -12,7 +12,7 @@ This is where I ended up after a lot of trial and error.
  |------+------+------+------+------+------|------+------+------+------+------+------|
  | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Sft(Ent)|
  |------+------+------+------+------+------+------+------+------+------+------+------|
- | FUNC | Tab  | Alt  | GUI  |Lower | Sft(Space)  |Raise | Left | Down |  Up  |Right |
+ | FUNC | Tab  | Alt  | GUI  |Lower |     Space   |Raise | Left | Down |  Up  |Right |
  `-----------------------------------------------------------------------------------'
 ```
 
