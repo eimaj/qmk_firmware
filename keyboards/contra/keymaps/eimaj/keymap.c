@@ -21,7 +21,7 @@ extern keymap_config_t keymap_config;
 
 enum planck_layers
 {
-  // _QWERTY,
+  _QWERTY,
   _QWERNUX,
   _LOWER,
   _RAISE,
@@ -124,13 +124,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-----------------------------------------------------------------------------------'
    */
     [_FUNCTION] = {
-      {_______, QWERTY, QWERNUX, _______, _______, _______, _______, _______, KC_7, KC_8, KC_9, KC_BSPC},
-      {KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, _______, _______, KC_4, KC_5, KC_6, _______},
-      {KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, _______, _______, KC_1, KC_2, KC_3, _______},
-      {_______, _______, _______, _______, _______, _______, _______, _______, KC_0, KC_DOT, _______, _______}}};
+      {_______, QWERTY,  QWERNUX, _______, _______, _______, _______, KC_PLUS, KC_7,   KC_8,   KC_9,    KC_BSPC},
+      {KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   _______, KC_MINS, KC_4,   KC_5,   KC_6,    _______},
+      {KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______, KC_ASTR, KC_1,   KC_2,   KC_3,    _______},
+      {_______, _______, _______, _______, _______, _______, _______, KC_SLSH, KC_0,   KC_DOT, KC_EQL, _______}}};
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
+        case QWERTY:
+            if (record->event.pressed) {
+              set_single_persistent_default_layer(_QWERTY);
+            }
+            return false;
+            break;
+        case QWERNUX:
+            if (record->event.pressed) {
+              set_single_persistent_default_layer(_QWERNUX);
+            }
+            return false;
+            break;
         case LOWER:
             if (record->event.pressed) {
                 layer_on(_LOWER);
