@@ -100,7 +100,7 @@ The basic set of keycodes are based on the [HID Keyboard/Keypad Usage Page (0x07
 |Key                |Aliases             |Description                         |
 |-------------------|--------------------|------------------------------------|
 |`KC_CAPSLOCK`      |`KC_CLCK`, `KC_CAPS`|Caps Lock                           |
-|`KC_SCROLLLOCK`    |`KC_SLCK`, `KC_BRMD`|Scroll Lock, Brightness Down (macOS)|
+|`KC_SCROLLLOCK`    |`KC_SLCK`, `KC_BRMD`|Scroll Lock, Brigavtness Down (macOS)|
 |`KC_NUMLOCK`       |`KC_NLCK`           |Keypad Num Lock and Clear           |
 |`KC_LOCKING_CAPS`  |`KC_LCAP`           |Locking Caps Lock                   |
 |`KC_LOCKING_NUM`   |`KC_LNUM`           |Locking Num Lock                    |
